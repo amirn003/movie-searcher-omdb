@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Highlights!</title>
+  <title>Omdb Movie Search</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
@@ -10,14 +10,7 @@
 </head>
 <body>
   <div class="container text-center">
-    <h1>Ajax POST:</h1>
-    <form action="" id="form">
-      <input type="email" id="email">
-      <input type="password" id="password">
-      <input type="submit">
-    </form>
-    <hr>
-    <h1>AJAX GET Movie:</h1>
+    <h1 class="mt-3">Search Your Movie from Omdb:</h1>
     <form id="search-form" class="row">
       <div class="col-10">
         <input id="search-input" type="text" class="form-control" placeholder="Find movies">
@@ -26,7 +19,7 @@
         <input type="submit" class="btn btn-primary" value="Search">
       </div>
     </form>
-    <ul id="results" class="list-inline"></ul>
+    <ul id="results" class="list-inline mt-5"></ul>
   </div>
 
   <script src="index.js"></script>
