@@ -1,17 +1,21 @@
 const results = document.querySelector("#results")
 
-// get query from the form
+// Get query from the form
 const form = document.querySelector("#search-form")
 console.log(form)
 
 // Add an EventListener
 form.addEventListener("submit", (event) => {
   event.preventDefault()
-  console.log("Hello from EventListener")
+  const input = event.currentTarget.querySelector(".form-control").value
+  console.log(input)
+  searchMovie(input)
 
 })
 
-fetch("http://www.omdbapi.com/?s=harry potter&apikey=adf1f2d7")
+
+const searchMovie = (query) => {
+  fetch(`http://www.omdbapi.com/?s=${query}&apikey=adf1f2d7`)
   .then(response => response.json())
   .then((data) => {
     console.log(data)
@@ -23,3 +27,4 @@ fetch("http://www.omdbapi.com/?s=harry potter&apikey=adf1f2d7")
       results.insertAdjacentHTML("beforeend", movieTag)
     })
   })
+}
