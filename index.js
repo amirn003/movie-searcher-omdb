@@ -8,7 +8,7 @@ console.log(form)
 
 
 const searchMovie = (query) => {
-  fetch(`http://www.omdbapi.com/?s=${query}&apikey=adf1f2d7`)
+  fetch(`https://www.omdbapi.com/?s=${query}&apikey=adf1f2d7`)
   .then(response => response.json())
   .then((data) => {
     console.log(data)
