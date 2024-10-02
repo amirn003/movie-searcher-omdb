@@ -25,7 +25,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const input = event.currentTarget.querySelector("#keyword").value;
   if (input.trim() === '') {
-    searchMovie("The lion king");
+    searchMovie("The Lion King");
   }
   else {
     searchMovie(input);
@@ -33,4 +33,4 @@ form.addEventListener("submit", (event) => {
 });
 
 
-searchMovie("Harry Potter");
+searchMovie("The Lion King");
