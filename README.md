@@ -1,4 +1,4 @@
-# OMDB Movie Search
+# OMDB Movie Searcher
 
 This project allows you to search for movies and instantly update the list of films using the OMDB API.
 
